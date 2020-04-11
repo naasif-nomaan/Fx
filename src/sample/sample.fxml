@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="249.0" prefWidth="308.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <GridPane layoutX="19.0" prefHeight="34.0" prefWidth="289.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="click" mnemonicParsing="false" onAction="#clickOnButton_click" prefHeight="26.0" prefWidth="162.0" text="Click to Display" />
+            <Button fx:id="clearall" mnemonicParsing="false" onAction="#clickOnButton_clearall" prefHeight="26.0" prefWidth="139.0" text="Clear" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <TextField fx:id="write" layoutX="10.0" layoutY="58.0" prefHeight="26.0" prefWidth="289.0" />
+      <Label layoutX="8.0" layoutY="34.0" prefHeight="16.0" prefWidth="161.0" text="Write down something:" />
+      <Label layoutX="9.0" layoutY="91.0" text="Display Panel:" />
+      <TextArea fx:id="text" layoutX="8.0" layoutY="118.0" prefHeight="118.0" prefWidth="289.0" />
+   </children>
+</AnchorPane>
